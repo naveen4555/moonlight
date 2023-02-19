@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Naveen | portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<header>
+       <a href="#" class="logo">Naveen</a>
+       <ul>
+       	<li><a href="#" class="active">Home</a></li>
+       	<li><a href="#about-wrapper">About</a></li>
+       	<li><a href="#">Skills</a></li>
+       	<li><a href="#">Contact</a></li>
+       </ul>
+	</header> 
+	<section>
+		
+		<img src="media/star.png" id="stars">
+		<img src="media/moonhi.png" id="moon">
+		<img src="media/mountains_behind.png" id="mountain_behind">
+		<h2 id="text">Moon Light</h2>
+		<a href="#" id="btn">Explore</a>
+		<img src="media/mountains_front.png" id="mountain_front">
+	</section> 
+	<body>
+    
+		<div class = "about-wrapper">
+		  <div class = "about-left">
+			<div class = "about-left-content">
+			  <div>
+				<div class = "shadow">
+				  <div class = "about-img">
+					<img src = "media/IMG_0103.jpg" alt = "about image">
+				  </div>
+				</div>
+	
+				<h2>Naveen Kumar S</h2>
+				<h3>UI/UX Designer</h3>
+			  </div>
+	
+			  <ul class = "icons">
+			
+				<li><i class = "fa fa-github"><a href="https://github.com/naveen4555"> </a></i></li>
+				<li><i class = "fa fa-instagram"></i></li>
+				<li><i class = "fa fa-linkedin"></i></li>
+				<li><i class = "fa fa-facebook"></i></li>
+			  </ul>
+			</div>
+			
+		  </div>
+	
+		  <div class = "about-right">
+			<h1>Hello<span>!</span></h1>
+			<h2>Here's who I am & what I do</h2>
+			<div class = "about-btns">
+			  <button type = "button" class = "btn btn-pink"><a href="https://drive.google.com/file/d/1E9VWbyh9Pp5sjpeYmNkaV3igqfk7g4bG/view?usp=share_link">Resume</a></button>
+			  <button type = "button" class = "btn btn-white"><a href="https://github.com/naveen4555">Github</a></button>
+			</div>
+	
+			<div class = "about-para">
+			  <p>Highly organized and hard-working individual looking for a responsible position to gain practical experience. Always willing to innovate new things which can improve the existing technology.</p>
+			 
+			</div>
+			<div class="credit">Visit my <span style="color:tomato"> <a href="https://naveen4555portfolio001.on.drv.tw/naveenport/">Portfolio</a></div>
+		  </div>
+		</div>
+	  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<script>
+		let stars = document.getElementById('stars')
+		let moon = document.getElementById('moon')
+		let mountain_behind = document.getElementById('mountain_behind')
+		let text = document.getElementById('text')
+		let btn = document.getElementById('btn')
+		let mountain_front = document.getElementById('mountain_front')
+		let header = document.getElementById('header')
+
+		window.addEventListener('scroll',function(){
+			let value = window.scrollY;
+			stars.style.left = value * 0.25+ 'px';
+			moon.style.top = value * 1.05+ 'px';
+			mountain_behind.style.top = value * 0.5+ 'px';
+			mountain_front.style.top = value * 0 + 'px';
+			text.style.marginRight = value * 4 + 'px';
+			text.style.marginTop = value * 1.5 + 'px';
+			btn.style.marginTop = value * 1.5 + 'px';
+			header.style.marginTop = value * 0.5 + 'px';
+
+		})
+	</script>
+
+</body>
+</html>
